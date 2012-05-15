@@ -1,0 +1,7 @@
+a fork of the maven-release-plugin (v2.2.2) that implements update-versions for releases (http://jira.codehaus.org/browse/MRELEASE-699)
+
+forked from https://github.com/ge0ffrey/maven-release (originally https://github.com/apache/maven-release)
+
+own modifications:
+- release:update-versions is allowed to handle non-SNAPSHOT projects now
+- release:update-versions may bump the release version to an arbitrary value (instead of just removing the SNAPSHOT suffix)
