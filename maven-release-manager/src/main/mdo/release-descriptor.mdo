@@ -480,6 +480,14 @@
             with @{ and }
           </description>
         </field>
+        <field>
+          <name>updateVersions</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <description>
+            Whether we are inside a UpdateVersionsMojo
+          </description>
+        </field>
 
         <!-- Announcement Information
 

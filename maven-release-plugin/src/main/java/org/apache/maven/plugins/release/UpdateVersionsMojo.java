@@ -100,6 +100,7 @@ public class UpdateVersionsMojo
         config.setAutoVersionSubmodules( autoVersionSubmodules );
         config.setDefaultDevelopmentVersion( developmentVersion );
         config.setDefaultReleaseVersion( releaseVersion );
+        config.setUpdateVersions( true );
 
         Map originalScmInfo = new HashMap();
         originalScmInfo.put( ArtifactUtils.versionlessKey( project.getGroupId(), project.getArtifactId() ), project.getScm() );

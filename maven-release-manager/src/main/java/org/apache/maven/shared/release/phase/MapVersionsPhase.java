@@ -311,7 +311,7 @@ public class MapVersionsPhase
             }
             else
             {
-                if ( ArtifactUtils.isSnapshot( project.getVersion() ) )
+                if ( ArtifactUtils.isSnapshot( project.getVersion() ) || releaseDescriptor.isUpdateVersions() )
                 {
                     nextVersion = releaseVersionInfo.getReleaseVersionString();
 

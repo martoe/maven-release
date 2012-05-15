@@ -106,7 +106,7 @@ public class CheckPomPhase
             }
         }
 
-        if ( !containsSnapshotProjects && !releaseDescriptor.isBranchCreation() )
+        if ( !containsSnapshotProjects && !releaseDescriptor.isBranchCreation() && !releaseDescriptor.isUpdateVersions() )
         {
             throw new ReleaseFailureException( "You don't have a SNAPSHOT project in the reactor projects list." );
         }
